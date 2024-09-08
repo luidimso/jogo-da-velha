@@ -8,20 +8,15 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.tabela {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  .celula {
+    width: 33%;
+    height: 100px;
+    border: 1px solid black;
+  }
 }
