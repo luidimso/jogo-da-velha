@@ -1,0 +1,7 @@
+{
+  "name": "jogo-da-velha",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
