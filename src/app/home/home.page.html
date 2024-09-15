@@ -8,14 +8,14 @@
 
 <ion-content [fullscreen]="true">
   <div class="tabela">
-    <div class="celula" (click)="check('11')">X</div> 
-    <div class="celula" (click)="check('12')"></div>
-    <div class="celula" (click)="check('13')"></div>
-    <div class="celula" (click)="check('21')"></div>
-    <div class="celula" (click)="check('22')"></div>
-    <div class="celula" (click)="check('23')"></div>
-    <div class="celula" (click)="check('31')"></div>
-    <div class="celula" (click)="check('32')"></div>
-    <div class="celula" (click)="check('33')"></div>
+    <div class="celula" (click)="check('11')"><span *ngIf="player1.includes('11')">X</span><span *ngIf="player2.includes('11')">O</span></div> 
+    <div class="celula" (click)="check('12')"><span *ngIf="player1.includes('12')">X</span><span *ngIf="player2.includes('12')">O</span></div>
+    <div class="celula" (click)="check('13')"><span *ngIf="player1.includes('13')">X</span><span *ngIf="player2.includes('13')">O</span></div>
+    <div class="celula" (click)="check('21')"><span *ngIf="player1.includes('21')">X</span><span *ngIf="player2.includes('21')">O</span></div>
+    <div class="celula" (click)="check('22')"><span *ngIf="player1.includes('22')">X</span><span *ngIf="player2.includes('22')">O</span></div>
+    <div class="celula" (click)="check('23')"><span *ngIf="player1.includes('23')">X</span><span *ngIf="player2.includes('23')">O</span></div>
+    <div class="celula" (click)="check('31')"><span *ngIf="player1.includes('31')">X</span><span *ngIf="player2.includes('31')">O</span></div>
+    <div class="celula" (click)="check('32')"><span *ngIf="player1.includes('32')">X</span><span *ngIf="player2.includes('32')">O</span></div>
+    <div class="celula" (click)="check('33')"><span *ngIf="player1.includes('33')">X</span><span *ngIf="player2.includes('33')">O</span></div>
   </div>
 </ion-content>
