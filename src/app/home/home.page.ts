@@ -43,7 +43,7 @@ export class HomePage {
       won = true;
     } else if (player.includes("11") && player.includes("21") && player.includes("31")) {
       won = true;
-    } else if (player.includes("12") && player.includes("22") && player.includes("31")) {
+    } else if (player.includes("12") && player.includes("22") && player.includes("32")) {
       won = true;
     } else if (player.includes("13") && player.includes("23") && player.includes("33")) {
       won = true;

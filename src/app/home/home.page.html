@@ -18,4 +18,6 @@
     <div class="celula" (click)="check('32')"><span *ngIf="player1.includes('32')">X</span><span *ngIf="player2.includes('32')">O</span></div>
     <div class="celula" (click)="check('33')"><span *ngIf="player1.includes('33')">X</span><span *ngIf="player2.includes('33')">O</span></div>
   </div>
+
+  <h3 *ngIf="winner != 0">Player {{winner}} venceu!</h3>
 </ion-content>
