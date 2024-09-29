@@ -59,4 +59,15 @@ export class HomePage {
     return won;
   }
 
+  refresh() {
+    this.winner = 0;
+    this.player1 = [];
+    this.player2 = [];
+    this.turn = 1;
+  }
+
 }
+
+// npm install @capacitor/android
+// ionic capacitor add android
+// ionic cap open android
