@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -11,7 +12,7 @@ export class HomePage {
   player1:string[] = [];
   player2:string[] = [];
   winner:number = 0;
-  audio = new Audio('./../assets/audio/victory.mp3');
+  audio = new Audio();
 
   constructor() {}
 
@@ -25,7 +26,8 @@ export class HomePage {
 
       if(this.ckeckIfWon()) {
         this.winner = this.turn;
-        this.audio.play();
+        const audioElement = document.getElementById('victory-audio') as HTMLAudioElement;
+        audioElement?.play();
       }
 
       this.turn == 1 ? this.turn = 2 : this.turn = 1;
